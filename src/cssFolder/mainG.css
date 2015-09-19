@@ -1,0 +1,273 @@
+.root {
+    -fx-background-color: #5787d4;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * HOME SCREEN                                                                 *
+ *                                                                             *
+ ******************************************************************************/
+
+#refBtn {  -fx-graphic: url("/resources/homeScreen/refBtn/refBtn_normal.png");  }
+#refBtn:hover {  -fx-graphic: url("/resources/homeScreen/refBtn/refBtn_hover.png");  }
+#refBtn:pressed {  -fx-graphic: url("/resources/homeScreen/refBtn/refBtn_clicked.png");  }
+
+#tutorialBtn {
+    -fx-text-fill: white;
+    -fx-background-color: #4067de;
+}
+
+#tutorialBtn:hover {
+    -fx-background-color: #106770;
+}
+
+.aboutText {
+    -fx-font: 16 Consolas;
+    -fx-text-fill: white;
+}
+
+#authorLabel, #supervisorLabel {
+    -fx-font: 16 Consolas;
+    -fx-text-fill: white;
+}
+
+#titleLabel {
+    -fx-font: 35 Consolas;
+    -fx-text-fill: white;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Action Controls Menu (play,pause, etc.)                                     *
+ *                                                                             *
+ ******************************************************************************/
+#settingsPane { -fx-opacity: 0%  }
+
+#playBtn {  -fx-graphic: url("/resources/controlMenu/playBtn_normal.png");  }
+#playBtn:hover {  -fx-graphic: url("/resources/controlMenu/playBtn_hover.png");  }
+#playBtn:pressed { -fx-graphic: url("/resources/controlMenu/playBtn_clicked.png");}
+
+#pauseBtn {  -fx-graphic: url("/resources/controlMenu/pauseBtn_normal.png");  }
+#pauseBtn:hover {  -fx-graphic: url("/resources/controlMenu/pauseBtn_hover.png");  }
+#pauseBtn:pressed { -fx-graphic: url("/resources/controlMenu/pauseBtn_clicked.png");}
+
+#nextBtn {  -fx-graphic: url("/resources/controlMenu/nextBtn_normal.png");  }
+#nextBtn:hover {  -fx-graphic: url("/resources/controlMenu/nextBtn_hover.png");  }
+#nextBtn:pressed {  -fx-graphic: url("/resources/controlMenu/nextBtn_clicked.png");  }
+
+#previousBtn {  -fx-graphic: url("/resources/controlMenu/previousBtn_normal.png");  }
+#previousBtn:hover {  -fx-graphic: url("/resources/controlMenu/previousBtn_hover.png");  }
+#previousBtn:pressed {  -fx-graphic: url("/resources/controlMenu/previousBtn_clicked.png");  }
+
+#resetBtn {  -fx-graphic: url("/resources/controlMenu/resetBtn_normal.png");  }
+#resetBtn:hover {  -fx-graphic: url("/resources/controlMenu/resetBtn_hover.png");  }
+#resetBtn:pressed {  -fx-graphic: url("/resources/controlMenu/resetBtn_clicked.png");  }
+
+#settingsBtn {  -fx-graphic: url("/resources/controlMenu/setting_normal.png");  }
+#settingsBtn:hover {    -fx-graphic: url("/resources/controlMenu/setting_hover.png");  }
+#settingsBtn:pressed {    -fx-graphic: url("/resources/controlMenu/setting_click.png");  }
+
+#tableInfoBtn {  -fx-graphic: url("/resources/tableInfoBtn/tableBtn_normal.png");  }
+#tableInfoBtn:hover {    -fx-graphic: url("/resources/tableInfoBtn/tableBtn_hover.png");  }
+#tableInfoBtn:pressed {    -fx-graphic: url("/resources/tableInfoBtn/tableBtn_clicked.png");  }
+
+/*******************************************************************************
+ *                                                                             *
+ * List View (code and info listView tables)                                   *
+ *                                                                             *
+ ******************************************************************************/
+#infoPane .list-cell:selected {  -fx-background-color: dimgrey;  }
+#infoPane .list-cell {
+    -fx-background-color: #69a0e5;
+    -fx-text-fill: white;
+    -fx-padding: 0;
+}
+#infoPane .list-view {
+    -fx-font: 12 Consolas;
+    -fx-background-color: #69a0e5;
+    -fx-background-radius: 10px;
+    -fx-border-width: 10px;
+    -fx-padding: 15;
+}
+/*** * * * * Scrollbar * * * * * * * * * * * * * * * ***************************/
+.decrement-button, .increment-button, .track-background {
+    -fx-background-color: #69a0e5;
+    -fx-font-size: 9;
+}
+.increment-arrow, .decrement-arrow, .thumb {  -fx-background-color: white;  }
+
+/*******************************************************************************
+ *                                                                             *
+ * Code and Info Buttons on the right side                                     *
+ *                                                                             *
+ ******************************************************************************/
+#infoBtn {  -fx-graphic: url("/resources/infoBtn/infoBtn_normal.png");  }
+#infoBtn:hover {    -fx-graphic: url("/resources/infoBtn/infoBtn_hover.png");  }
+#infoBtn:pressed {  -fx-graphic: url("/resources/infoBtn/infoBtn_click.png");  }
+
+#codeBtn {  -fx-graphic: url("/resources/codeBtn/codeBtn_normal.png");  }
+#codeBtn:hover {  -fx-graphic: url("/resources/codeBtn/codeBtn_hover.png");  }
+#codeBtn:pressed { -fx-graphic: url("/resources/codeBtn/codeBtn_clicked.png");  }
+
+/*******************************************************************************
+ *                                                                             *
+ * Settings Panel                                                              *
+ *                                                                             *
+ ******************************************************************************/
+.separator:horizontal .line {  -fx-border-color: white;  }
+.text-input {  -fx-text-fill: slategray;  }
+#vboxSettings .label, #vboxSettings .button {  -fx-text-fill: white;  }
+#vboxSettings .button {  -fx-background-color: #353a48;  }
+#vboxSettings {
+    -fx-background-color: #585e74;
+    -fx-background-radius: 5;
+    -fx-border-width: 20;
+    -fx-padding: 15;
+}
+
+/*******************************************************************************************
+ *                                                                                         *
+ * MenuBar                                                                                 *
+ *                                                                                         *
+ ******************************************************************************************/
+.tool-bar , .tool-bar .button {  -fx-background-color: #7badd6;  }
+
+#homeBtn {  -fx-graphic: url("/resources/homeBtn/homeBtn_normal.png");  }
+#homeBtn:hover {  -fx-graphic: url("/resources/homeBtn/homeBtn_hover.png");  }
+#homeBtn:pressed {  -fx-graphic: url("/resources/homeBtn/homeBtn_clicked.png"); }
+
+.menu-button:openvertically .arrow-button .arrow {  visibility: false;  }
+
+.menu-button {
+    -fx-graphic: url("/resources/algoBtn/algoBtn_normal.png");
+    -fx-background-color: #7badd6;
+}
+.menu-button:hover {  -fx-graphic: url("/resources/algoBtn/algoBtn_hover.png");  }
+.menu-button:pressed {  -fx-graphic: url("/resources/algoBtn/algoBtn_clicked.png");  }
+
+.context-menu {  -fx-background-color: #7badd6;  }
+.context-menu .context-menu .menu-item:hover, .menu-item:focused {  -fx-background-color: #4067de;  }
+.menu-item .label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+#currentAlgoLabel {
+    -fx-text-fill: white;
+    -fx-font: 22 'Consolas';
+    -fx-font-style: italic;
+}
+
+#exitBtn {  -fx-graphic: url("/resources/exitBtn/exitBtn_normal.png");  }
+#exitBtn:hover {  -fx-graphic: url("/resources/exitBtn/exitBtn_hover.png");  }
+#exitBtn:pressed {  -fx-graphic: url("/resources/exitBtn/exitBtn_clicked.png");}
+
+/*******************************************************************************
+ *                                                                             *
+ * Animation Pane                                                              *
+ *                                                                             *
+ ******************************************************************************/
+#searchRectB, #patternRectB {
+    -fx-opacity: 0%;
+    -fx-fill: #26ff43;
+}
+
+#searchRectA, #patternRectA {
+    -fx-opacity: 50%;
+    -fx-fill: darkorange;
+}
+
+#patternLabel, #searchLabel, #resultLabel {
+    -fx-text-fill: white;
+    -fx-font: 40 'Consolas';
+}
+
+#resultLabel {
+    -fx-font-size: 18;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * ListViews AlgoTable TableInfoPane                                           *
+ *                                                                             *
+ ******************************************************************************/
+#backPane .list-view .scroll-bar .increment-arrow,
+#backPane .list-view .scroll-bar .decrement-arrow,
+#backPane .list-view .scroll-bar .increment-button,
+#backPane .list-view .scroll-bar .decrement-button {
+    -fx-padding:0;
+}
+
+#tablePane .list-cell:selected {
+    -fx-background-color: dimgrey;
+}
+#tablePane .list-cell {
+    -fx-background-color: #69a0e5;
+    -fx-text-fill: white;
+    -fx-padding: 5 5 5 5;
+}
+
+#tablePane .list-view {
+    -fx-font: 20 Consolas;
+    -fx-border-width: 1px;
+    -fx-border-color: #4067de;
+    -fx-padding: 0;
+}
+
+#backPane, #tableInfoPane {
+    -fx-background-color: #4067de;
+    -fx-background-radius: 10px;
+}
+
+#tableInfoPane .list-cell {
+    -fx-text-fill: white;
+    -fx-padding: 0;
+    /*-fx-font: 12 Consolas;*/
+}
+
+#tableInfoPane .list-view {
+    -fx-font: 12 Consolas;
+}
+/*******************************************************************************
+ *                                                                             *
+ * Tutorial Panes                                                              *
+ *                                                                             *
+ ******************************************************************************/
+
+/*#vboxSettings .label, #vboxSettings .button {  -fx-text-fill: white;  }*/
+.helpBtn {
+    -fx-background-color: #1d5217;
+    -fx-text-fill: white;
+}
+
+.helpBtn:hover {
+    -fx-background-color: #106707;
+}
+
+
+#startPane, #helpPaneA, #helpPaneB, #helpPaneC, #helpPaneD, #endPane {
+    -fx-background-color: #277445;
+    -fx-background-radius: 5;
+    -fx-border-width: 20;
+    -fx-padding: 15;
+}
+
+#helpPaneA, #helpPaneB, #helpPaneC, #helpPaneD, #endPane {
+    -fx-opacity: 0%;
+}
+
+.helpLabel{
+    -fx-font: 15 Consolas;
+    -fx-text-fill: white;
+}
+
+.actionLabel{
+    -fx-font: 12 Consolas;
+    -fx-text-fill: white;
+}
+
+.helpText{
+    -fx-font: 13 Consolas;
+    -fx-fill: white;
+    /*-fx-text-fill: white;*/
+}

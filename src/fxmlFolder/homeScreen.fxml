@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane minHeight="-Infinity" prefHeight="750.0" prefWidth="1110.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainApp.HomeController">
+   <left>
+      <VBox prefHeight="576.0" prefWidth="50.0" stylesheets="@../cssFolder/mainG.css" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="36.0" prefWidth="50.0" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <StackPane prefHeight="693.0" prefWidth="546.0">
+         <children>
+            <Pane fx:id="infoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="495.0" StackPane.alignment="BOTTOM_RIGHT">
+               <children>
+                  <ListView fx:id="refView" layoutX="499.0" layoutY="110.0" prefHeight="270.0" prefWidth="550.0" />
+               </children>
+            </Pane>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="950.0" StackPane.alignment="TOP_LEFT">
+               <children>
+                  <Label fx:id="titleLabel" layoutX="17.0" layoutY="34.0" prefHeight="63.0" prefWidth="783.0" text="String-Matching Algorithms Visualisation" />
+                  <Text fx:id="aboutText" layoutX="113.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="aboutText" text="String-Matching is concerned with finding an occurence of a specific string (also known as pattern) in a specific text. The most obvious way to do that is by using the Brute-Force algorithm, however there have been many improvements which can be classiffied into 4 categories:" wrappingWidth="794.345703125" />
+                  <Button fx:id="tutorialBtn" layoutX="599.0" layoutY="411.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#loadTutorial" prefHeight="39.0" prefWidth="216.0" text="Tutorial" />
+                  <Text layoutX="222.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="aboutText" text="- in a specific order (TwoWay)" wrappingWidth="313.83642578125" />
+                  <Text layoutX="113.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="aboutText" text="This application aims at aiding you towards understanding the basic string-matching algorithms through visually animating the procedure while at the same time offering you the code which drives it." wrappingWidth="777.6015625" />
+                  <Text layoutX="222.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="aboutText" text="- right to left (Boyer-Moore)" wrappingWidth="313.83642578125" />
+                  <Text layoutX="222.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="aboutText" text="- left to right (Knuth-Morris-Pratt)" wrappingWidth="475.83642578125" />
+                  <Text layoutX="222.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="aboutText" text="- in any order (Horspool, QuickSearch)" wrappingWidth="489.83642578125" />
+               </children></Pane>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="294.0" prefWidth="437.0" StackPane.alignment="BOTTOM_LEFT">
+               <children>
+                  <Text fx:id="authorLabel" layoutX="13.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Created by: I. Bouramas" wrappingWidth="288.345703125" />
+                  <Text fx:id="supervisorLabel" layoutX="13.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supervisor: G. Norman" wrappingWidth="288.345703125" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </center>
+   <right>
+      <VBox>
+         <children>
+            <Region minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="58.0" VBox.vgrow="ALWAYS" />
+            <Button id="refBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#toggleRefPane" prefHeight="221.0" prefWidth="58.0" VBox.vgrow="NEVER" />
+            <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="35.0" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

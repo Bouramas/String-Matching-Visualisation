@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane minHeight="-Infinity" prefHeight="722.0" prefWidth="1110.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainApp.TutorialController">
+   <left>
+      <VBox prefHeight="576.0" prefWidth="50.0" stylesheets="@../cssFolder/mainG.css" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="36.0" prefWidth="50.0" />
+            <Button fx:id="playBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="35.0" styleClass="button-control">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="pauseBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="35.0" styleClass="button-control">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="nextBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="35.0" styleClass="button-control">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="previousBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="35.0" styleClass="button-control">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="resetBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="35.0" styleClass="button-control">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="settingsBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="35.0" styleClass="button-control">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="tableInfoBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="35.0" styleClass="button-control">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <StackPane prefHeight="693.0" prefWidth="546.0">
+         <children>
+            <Pane fx:id="infoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="495.0" StackPane.alignment="BOTTOM_RIGHT" />
+            <Pane fx:id="settingsPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="213.0" prefWidth="343.0" StackPane.alignment="TOP_LEFT">
+               <children>
+                  <VBox id="vboxSettings" layoutX="20.0" layoutY="250.0" prefHeight="192.0" prefWidth="326.0">
+                     <children>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="326.0">
+                           <children>
+                              <Label prefHeight="22.0" prefWidth="150.0" text=" Animation Speed" />
+                              <Slider fx:id="animSpeedSlider" disable="false" max="6.0" min="0.5" prefHeight="24.0" prefWidth="175.0" />
+                           </children>
+                        </HBox>
+                        <Separator prefHeight="8.0" prefWidth="326.0" />
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="326.0">
+                           <children>
+                              <Label prefHeight="22.0" prefWidth="150.0" text=" Font Size" />
+                              <Slider fx:id="fontSizeSlider" disable="false" max="20.0" min="10.0" prefHeight="24.0" prefWidth="175.0" />
+                           </children>
+                        </HBox>
+                        <Separator prefHeight="11.0" prefWidth="326.0" />
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="326.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="160.0" text=" Change the Text" />
+                              <Button fx:id="randomBtn" alignment="CENTER" disable="false" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="24.0" prefWidth="165.0" text="Generate Random" />
+                           </children>
+                        </HBox>
+                        <TextField fx:id="searchTextInput" disable="false" prefHeight="23.0" prefWidth="167.0" promptText="Search Text">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="patternTextInput" disable="false" prefHeight="21.0" prefWidth="167.0" promptText="Pattern Text">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <HBox prefHeight="27.0" prefWidth="326.0">
+                           <children>
+                              <Button fx:id="clearTextBtn" disable="false" mnemonicParsing="false" prefHeight="26.0" prefWidth="155.0" text="Clear Text" />
+                              <Region prefHeight="21.0" prefWidth="16.0" />
+                              <Button fx:id="doneBtn" disable="false" mnemonicParsing="false" prefHeight="26.0" prefWidth="155.0" text="Done" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="233.0" prefWidth="950.0" StackPane.alignment="TOP_LEFT">
+               <children>
+                  <Pane fx:id="helpPaneB" layoutX="611.0" layoutY="244.0" prefHeight="143.0" prefWidth="382.0">
+                     <children>
+                        <Label layoutX="8.0" layoutY="5.0" prefHeight="37.0" prefWidth="192.0" styleClass="helpLabel" text="The Information button" />
+                        <Text layoutX="10.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="helpText" text="Clicking this button, opens up a table containing useful information that will help you understand each algorithm you are examining." wrappingWidth="361.345703125" />
+                        <Button fx:id="nextBtnB" disable="true" layoutX="227.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleNextBtnB" prefHeight="26.0" prefWidth="136.0" styleClass="helpBtn" text="Next" />
+                     </children>
+                  </Pane>
+                  <Label fx:id="searchLabel" layoutX="80.0" layoutY="48.0" maxHeight="-Infinity" prefHeight="50.0" prefWidth="1200.0" text="${searchTextInput.text}" />
+                  <Label fx:id="patternLabel" layoutX="80.0" layoutY="107.0" prefHeight="50.0" prefWidth="370.0" text="${patternTextInput.text}" />
+                  <Rectangle fx:id="searchRectA" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="79.0" layoutY="45.0" rotate="180.0" width="22.0" />
+                  <Rectangle fx:id="patternRectA" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="79.0" layoutY="104.0" rotate="180.0" width="22.0" />
+                  <Rectangle fx:id="patternRectB" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="79.0" layoutY="45.0" rotate="180.0" width="22.0" />
+                  <Rectangle fx:id="searchRectB" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="79.0" layoutY="104.0" rotate="180.0" width="22.0" />
+                  <Label fx:id="resultLabel" layoutX="528.0" layoutY="199.0" prefHeight="44.0" prefWidth="421.0" />
+                  <Pane fx:id="startPane" layoutX="541.0" layoutY="32.0" prefHeight="201.0" prefWidth="363.0">
+                     <children>
+                        <Label layoutX="19.0" layoutY="3.0" prefHeight="43.0" prefWidth="192.0" styleClass="helpLabel" text="Application Tutorial" />
+                        <Text layoutX="14.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="helpText" text="The goal of this application is to assist in the understanding of string-matching algorithms. The main parts of such algorithms is the search text and and the text of the pattern we are looking for. Both can be seen on the left, in the two labels. In order to start this tutorial, please click on the button below." wrappingWidth="338.345703125" />
+                        <Button fx:id="startBtn" layoutX="213.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleStartBtn" prefHeight="26.0" prefWidth="136.0" styleClass="helpBtn" text="Start" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="helpPaneA" layoutX="8.0" layoutY="39.0" prefHeight="339.0" prefWidth="357.0">
+                     <children>
+                        <Label layoutX="12.0" layoutY="8.0" prefHeight="31.0" prefWidth="44.0" styleClass="actionLabel" text="Play" />
+                        <Label layoutX="12.0" layoutY="58.0" prefHeight="31.0" prefWidth="44.0" styleClass="actionLabel" text="Pause" />
+                        <Label layoutX="12.0" layoutY="107.0" prefHeight="31.0" prefWidth="88.0" styleClass="actionLabel" text="Fast Forward" />
+                        <Label layoutX="12.0" layoutY="157.0" prefHeight="31.0" prefWidth="88.0" styleClass="actionLabel" text="Rewind" />
+                        <Label layoutX="12.0" layoutY="207.0" prefHeight="31.0" prefWidth="112.0" styleClass="actionLabel" text="Reset Animation" />
+                        <Label layoutX="132.0" layoutY="14.0" prefHeight="43.0" prefWidth="192.0" styleClass="helpLabel" text="The Action Buttons " />
+                        <Text layoutX="128.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="helpText" text="Those are buttons that allow you to control the animation while in Action." wrappingWidth="215.345703125" />
+                        <Button fx:id="nextBtnA" disable="true" layoutX="203.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleNextBtnA" prefHeight="26.0" prefWidth="136.0" styleClass="helpBtn" text="Next" />
+                        <Label layoutX="12.0" layoutY="258.0" prefHeight="31.0" prefWidth="88.0" styleClass="actionLabel" text="Settings" />
+                        <Label layoutX="12.0" layoutY="304.0" prefHeight="31.0" prefWidth="151.0" styleClass="actionLabel" text="Algorithm's Table" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="helpPaneC" layoutX="610.0" layoutY="449.0" prefHeight="166.0" prefWidth="382.0">
+                     <children>
+                        <Label layoutX="8.0" layoutY="5.0" prefHeight="36.0" prefWidth="192.0" styleClass="helpLabel" text="The Code button" />
+                        <Text layoutX="10.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="helpText" text="Clicking this button, opens up a table containing the code (written in JAVA) for each algorithm you are examining. When you hit play, you will be able to see which line is executed in parallel with the visualisation." wrappingWidth="356.345703125" />
+                        <Button fx:id="nextBtnC" disable="true" layoutX="225.0" layoutY="126.0" mnemonicParsing="false" onAction="#handleNextBtnC" prefHeight="26.0" prefWidth="136.0" styleClass="helpBtn" text="Next" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="endPane" layoutX="273.0" layoutY="16.0" prefHeight="201.0" prefWidth="421.0" styleClass="helpPane">
+                     <children>
+                        <Label layoutX="19.0" layoutY="3.0" prefHeight="43.0" prefWidth="192.0" styleClass="helpLabel" text="Start Visualising!" />
+                        <Text layoutX="19.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="helpText" text="You can select an algorithm to visualise from the Algorithms menu bar above, or click below to go back to the home screen." wrappingWidth="376.345703125" />
+                        <Button fx:id="endBtn" disable="true" layoutX="68.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleEndBtn" prefHeight="26.0" prefWidth="267.0" styleClass="helpBtn" text="Home" />
+                        <Text layoutX="14.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="helpText" text="You can always revisit the tutotorial page from the home screen." wrappingWidth="371.345703125" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="tablePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="213.0" prefWidth="343.0" StackPane.alignment="CENTER_LEFT">
+               <children>
+                  <Pane fx:id="helpPaneD" layoutX="381.0" layoutY="-5.0" prefHeight="202.0" prefWidth="408.0">
+                     <children>
+                        <Label layoutX="11.0" layoutY="6.0" prefHeight="43.0" prefWidth="192.0" styleClass="helpLabel" text="The Settings Pane " />
+                        <Text layoutX="10.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="helpText" text="Through the settings, you are able to customize your experience with the algorithms. You can alter the speed with which the animation progresses. You can change the font size of the information and code tables. You can change the text and if you're bored of typing you can just generate a random text and pattern through the click of a button." wrappingWidth="383.345703125" />
+                        <Button fx:id="nextBtnD" disable="true" layoutX="249.0" layoutY="162.0" mnemonicParsing="false" onAction="#handleNextBtnD" prefHeight="26.0" prefWidth="136.0" styleClass="helpBtn" text="Next" />
+                     </children>
+                  </Pane>
+               </children></Pane>
+         </children>
+      </StackPane>
+   </center>
+   <right>
+      <VBox>
+         <children>
+            <Region minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="43.0" VBox.vgrow="ALWAYS" />
+            <Button id="infoBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="104.0" prefWidth="43.0" VBox.vgrow="NEVER" />
+            <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="35.0" />
+            <Button id="codeBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="221.0" prefWidth="43.0" VBox.vgrow="NEVER" />
+            <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="86.0" prefWidth="35.0" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

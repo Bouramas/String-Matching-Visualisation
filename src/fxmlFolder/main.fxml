@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+
+<BorderPane prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainApp.MainController">
+   <top>
+       <ToolBar prefHeight="40.0" prefWidth="200.0">
+           <items>
+               <Button fx:id="homeBtn" mnemonicParsing="false" onAction="#handleHomeBtn" />
+            <MenuButton fx:id="algoButton" mnemonicParsing="false">
+              <items>
+                <MenuItem fx:id="bruteForceBtn" mnemonicParsing="false" onAction="#handleBFBtn" text="Brute-Force" />
+                <MenuItem fx:id="kmpAlgoBtn" mnemonicParsing="false" onAction="#handleKMPBtn" text="Knuth-Morris-Pratt" />
+                <MenuItem fx:id="boyerMAlgoBtn" mnemonicParsing="false" onAction="#handleBMBtn" text="Boyer-Moore" />
+                <MenuItem fx:id="horspoolAlgoBtn" mnemonicParsing="false" onAction="#handleHPBtn" text="Horspool" />
+                <MenuItem fx:id="quickSAlgoBtn" mnemonicParsing="false" onAction="#handleQSBtn" text="Quick-Search" />
+                <MenuItem fx:id="notSoNaiveAlgoBtn" mnemonicParsing="false" onAction="#handleNSNBtn" text="Not-So-Naive" />
+                <MenuItem fx:id="smithAlgoBtn" mnemonicParsing="false" onAction="#handleSMBtn" text="Smith" />
+                <MenuItem fx:id="twoWayAlgoBtn" mnemonicParsing="false" onAction="#handleTWBtn" text="Two-Way" />
+              </items>
+            </MenuButton>
+               <Pane HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="currentAlgoLabel" layoutX="-5.0" layoutY="19.0" prefHeight="16.0" prefWidth="250.0" />
+               </children></Pane>
+               <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#handleExitBtn" />
+           </items>
+       </ToolBar>
+   </top>
+    <center>
+        <StackPane fx:id="screenHolder" VBox.vgrow="ALWAYS" />
+    </center>
+</BorderPane>
